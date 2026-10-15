@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workout Wednesday | Pravin Anguraja</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fc;
+      color: #172b4d;
+    }
+
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid #e1e8f2;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand { font-size: 18px; font-weight: bold; }
+    .brand span { color: #2864c5; }
+    .brand small {
+      display: block;
+      margin-top: 5px;
+      font-size: 11px;
+      color: #718096;
+      font-weight: normal;
+    }
+
+    .hero {
+      padding: 65px 8% 45px;
+      background: linear-gradient(120deg, #eaf2ff, #f8faff);
+    }
+
+    .eyebrow {
+      color: #2864c5;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 5vw, 54px);
+      margin: 15px 0;
+      letter-spacing: -1.5px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #62728a;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 42px 24px 65px;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 22px;
+    }
+
+    h2 { font-size: 25px; margin: 0; }
+    .count { color: #718096; font-size: 12px; }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e1e8f2;
+      border-radius: 16px;
+      padding: 26px;
+      display: grid;
+      grid-template-columns: 65px 1fr auto;
+      gap: 20px;
+      align-items: center;
+      box-shadow: 0 8px 28px rgba(25, 55, 100, .05);
+    }
+
+    .week {
+      width: 60px;
+      height: 60px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      color: #2864c5;
+      background: #eaf2ff;
+      font-weight: bold;
+    }
+
+    .meta {
+      font-size: 11px;
+      color: #718096;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+
+    h3 { margin: 8px 0; font-size: 19px; }
+    .description {
+      margin: 0;
+      font-size: 14px;
+      color: #62728a;
+      line-height: 1.7;
+    }
+
+    .tags { display: flex; gap: 8px; margin-top: 13px; flex-wrap: wrap; }
+    .tags span {
+      background: #f0f4fa;
+      color: #526782;
+      padding: 5px 9px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    .actions { display: flex; flex-direction: column; gap: 12px; }
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      white-space: nowrap;
+      padding: 12px 15px;
+      border-radius: 9px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .primary { background: #2864c5; color: white; }
+    .primary:hover { background: #174da7; }
+    .secondary { color: #2864c5; text-align: center; }
+
+    .note {
+      margin-top: 22px;
+      padding: 18px 20px;
+      background: #edf3fc;
+      border-radius: 12px;
+      color: #526782;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    footer {
+      background: white;
+      border-top: 1px solid #e1e8f2;
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: #718096;
+      font-size: 12px;
+    }
+
+    @media (max-width: 700px) {
+      header { padding: 18px 22px; }
+      .hero { padding: 45px 22px; }
+      main { padding: 32px 16px 45px; }
+      .card { grid-template-columns: 50px 1fr; padding: 18px; gap: 13px; }
+      .week { width: 46px; height: 46px; }
+      .actions { grid-column: 2; flex-direction: row; flex-wrap: wrap; }
+      .section-heading { align-items: flex-start; flex-direction: column; }
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      PA<span>.</span> Pravin Anguraja
+      <small>POWER BI · WORKOUT WEDNESDAY</small>
+    </div>
+    <a href="https://github.com/pravinanguraja"
+       style="color:#2864c5;text-decoration:none;font-size:13px;font-weight:bold">
+      GitHub ↗
+    </a>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">POWER BI PROJECT LIBRARY</div>
+    <h1>Workout Wednesday<span style="color:#2864c5">.</span></h1>
+    <p>
+      Exploring Power BI one challenge at a time. Browse report files,
+      study visual design techniques, and learn through hands-on
+      experimentation with DAX, data modeling, and analytics.
+    </p>
+  </section>
+
+  <main>
+    <div class="section-heading">
+      <h2>Challenges &amp; solutions</h2>
+      <span class="count">POWER BI FILE LIBRARY</span>
+    </div>
+
+    <article class="card">
+      <div class="week">W41</div>
+
+      <div>
+        <div class="meta">2026 · WEEK 41</div>
+        <h3>Stripe Chart using Native Visual</h3>
+        <p class="description">
+          Explore how to transform a column chart into a stripe chart
+          and use color to reveal patterns in temperature anomalies.
+        </p>
+        <div class="tags">
+          <span>Power BI</span>
+          <span>Data Visualization</span>
+          <span>PBIX</span>
+          <span>Excel Dataset</span>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="button primary"
+           href="https://github.com/SLakshmiP07/WorkoutWednesdayPowerBI/blob/main/Stripe%20Chart/Stripe%20Chart%20using%20Native%20Visual.pbix">
+          View PBIX ↗
+        </a>
+        <a class="button secondary"
+           href="https://github.com/SLakshmiP07/WorkoutWednesdayPowerBI/blob/main/Stripe%20Chart/GlobalTemp.xlsx">
+          Dataset ↗
+        </a>
+      </div>
+    </article>
+
+    <div class="note">
+      <strong>More challenges coming soon.</strong><br>
+      This library will grow as more Workout Wednesday solutions are added.
+      Links currently point to the original source repository.
+    </div>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Pravin Anguraja</span>
+    <span>Built with GitHub Pages · Power BI</span>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
